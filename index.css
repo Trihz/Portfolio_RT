@@ -1,0 +1,377 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* Style for the header */
+header {
+    background: linear-gradient(to bottom, rgb(255, 220, 207), white);
+    color: orangered; /* Text color */
+    padding: 20px;
+    text-align: center;
+    position: fixed; /* Make the header fixed/sticky */
+    width: 100%; /* Take the full width of the viewport */
+    top: 0; /* Stick to the top of the viewport */
+    z-index: 100; /* Ensure it's on top of other elements */
+    margin-bottom: 2vh;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Style for the header h1 (Your name) */
+header h1 {
+    font-size: 24px; /* Adjust the font size as needed */
+    margin: 0; /* Remove margin to keep it compact */
+}
+
+/* Style for the navigation bar */
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 5vh;
+    margin-bottom: 2vh;
+}
+
+nav li {
+    display: inline;
+    margin-right: 20px;
+   
+}
+
+nav a {
+    color: orangered; /* Text color for links */
+    text-decoration: none;
+    font-weight: 600; /* Make the links bold */
+    border: 1px solid orangered;
+    border-radius: 5px;
+    padding: 2vh 3vh;
+    font-size: 2vh;
+}
+
+/* Style for the navigation bar links on hover */
+nav a:hover {
+    text-decoration: underline; /* Underline links on hover */
+}
+
+
+section {
+    padding: 20px;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
+
+#home {
+    background-color: #ffffff; /* Background color */
+    padding: 20px;
+    text-align: center;
+    margin-top: 10vh;
+}
+
+#home h2 {
+    font-size: 24px; /* Adjust the font size as needed */
+    color: #333; /* Text color */
+    margin-bottom: 20px;
+}
+
+#home p {
+    font-size: 16px; /* Adjust the font size as needed */
+    color: #555; /* Text color */
+    line-height: 1.6; /* Line spacing */
+}
+
+/* Center text horizontally within the section */
+#home {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 70vh; /* You can adjust the height as needed */
+}
+
+/* Style for the Resume section */
+#resume {
+    padding: 20px;
+}
+
+#resume h2{
+    width: 100%;
+    text-align: center;
+    margin-bottom: 5vh;
+    font-size: 3vh;
+    color: orangered;
+    font-weight: 600;
+}
+
+/* Style for the language container row */
+.language-container-row {
+    display: flex; /* Use flexbox to arrange containers in a row */
+    justify-content: center; /* Distribute containers evenly within the row */
+}
+
+/* Style for individual language containers */
+.language-container {
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    text-align: center;
+    width: 20%;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-left: 2vh;
+    margin-right: 2vh;
+}
+
+.language-container h3 {
+    font-size: 3vh;
+    color: black;
+    font-weight: 500;
+}
+
+.pdf-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+}
+
+/* Style for PDF containers */
+.pdf-container img {
+    width: 70px;
+    height: auto;
+    margin-bottom: 4vh;
+}
+
+.pdf-container a {
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+    font-size: 2vh;
+    background-color: orangered;
+    border-radius: 1vh;
+    padding: 1vh 2vh;
+}
+
+.pdf-container a:hover {
+    text-decoration: underline;
+}
+
+
+
+#autobiography h2{
+    width: 100%;
+    text-align: center;
+    margin-bottom: 5vh;
+    font-size: 3vh;
+    color: orangered;
+    font-weight: 600;
+}
+
+/* Style for the section header */
+#autobiography h1 {
+    font-size: 2.7vh; /* Adjust the font size as needed */
+    color: #333; /* Text color */
+    margin-top: 2vh;
+    margin-bottom: 4vh;
+    margin-right: 20vh;
+    margin-left: 20vh;
+    line-height: 4vh;
+    text-align: center;
+}
+
+/* Style for the list */
+#autobiography ul {
+    list-style: disc; /* Use disc bullets for the list items */
+    margin-left: 20px; /* Add some left margin to the list */
+    font-size: 18px; /* Adjust the font size as needed */
+    color: #555; /* Text color for list items */
+    list-style-type: none;
+    margin-bottom: 6vh;
+}
+
+/* Style for list items */
+#autobiography li {
+    margin-bottom: 10px; /* Add space between list items */
+    text-align: center;
+}
+
+
+
+#invention{
+    margin-top: 10vh;
+}
+
+#invention h2{
+    width: 100%;
+    text-align: center;
+    margin-bottom: 5vh;
+    font-size: 3vh;
+    color: orangered;
+    font-weight: 600;
+}
+#invention-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+    height: 50vh;
+    background-color: transparent;
+    margin-top: 10vh;
+}
+.video-container {
+    width: 40%;
+}
+
+.video-container video {
+    width: 100%;
+    height: 45vh;
+}
+.video-container p {
+    text-align: center;
+    margin-bottom: 2vh;
+}
+
+.info-container {
+    width: 40%;
+    padding: 10px;
+    background-color: transparent;
+    height: 50vh;
+}
+
+.info-container h2 {
+    font-size: 3vh;
+}
+
+.pdf-container-invention {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5vh;
+}
+
+.pdf-language-invention {
+    text-align: center;
+    background-color: white;
+    box-shadow: 0 2px 4px 1px rgba(0, 0, 0, 0.1);
+    padding: 2vh 3vh;
+}
+.pdf-language-invention p {
+    font-size: 2.2vh;
+    color: orangered;
+    margin-bottom: 3vh;
+}
+
+.pdf-language-invention a {
+    text-decoration: none;
+    background-color: orangered;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 2vh;
+}
+
+.pdf-language-invention a:hover {
+    background-color: orangered;
+}
+#invention-container2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 5vh;
+}
+#invention-container2 p{
+    margin-bottom: 5vh;
+}
+
+
+
+#african{
+    margin-top: 10vh;
+}
+#african h2{
+    width: 100%;
+    text-align: center;
+    margin-bottom: 5vh;
+    font-size: 3vh;
+    color: orangered;
+    font-weight: 600;
+}
+
+
+#modern{
+    margin-top: 10vh;
+}
+#modern h2{
+    width: 100%;
+    text-align: center;
+    margin-bottom: 5vh;
+    font-size: 3vh;
+    color: orangered;
+    font-weight: 600;
+}
+
+
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.social-media {
+    text-align: center;
+    width: 15% !important;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.social-media h3 {
+    font-size: 2vh;
+    margin: 10px 0;
+}
+
+.social-media img {
+    width: 64px;
+    height: 64px;
+    margin: 2vh auto;
+}
+
+.social-media button {
+    background-color: orangered;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.social-media button:hover {
+    background-color: orangered;
+}
+
+
+
+#social{
+    margin-top: 10vh;
+    margin-bottom: 10vh;
+}
+#social h2{
+    width: 100%;
+    text-align: center;
+    margin-bottom: 5vh;
+    font-size: 3vh;
+    color: orangered;
+    font-weight: 600;
+}
