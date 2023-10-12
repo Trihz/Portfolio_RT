@@ -1,66 +1,75 @@
-*{
+body {
     margin: 0;
     padding: 0;
-}
-
-body {
     font-family: Arial, sans-serif;
-    background-color: transparent;
-    
-}
-
-.home{
-    background-image: url('assets/bachground2.avif'); /* Specify the URL of your background image */
-    background-size: cover; /* Adjust the size to cover the entire element */
-    background-position: center; /* Center the background image */
-    background-repeat: no-repeat;
     height: 100vh;
+    background-image: url('assets/back1.avif'); /* Replace with your image path */
+    background-size: cover;
+    background-position: center;
 }
 
 header {
     background-color: transparent;
-    color: #fff;
-    padding: 10px;
+    padding: 15px;
+    color: white;
 }
 nav{
-    margin-top: 3vh;
-}
-nav ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    text-align: center;
-}
-nav li {
-    display: inline;
-    margin: 0 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 nav a {
+    color: white;
     text-decoration: none;
-    color: #fff;
-    font-size: 2vh;
-    font-weight: 500;
     border: 1px solid white;
     padding: 1vh 3vh;
+    margin-left: 2vh;
+    margin-right: 2vh;
     border-radius: 5px;
+    font-size: 2vh;
 }
-.content_container{
-    height: 80vh !important;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin-top: 6vh;
-}
-.content-container {
-    display: none;
-    padding: 20px;
-    background-color: rgba(0, 137, 142, 0.4);
+
+
+
+
+main {
+    background-color: transparent;
     margin: 20px;
-    border-radius: 10px;
-    height: 80vh;
-    width: 80%;
 }
+.content {
+    display: none;
+    opacity: 0;
+    transform: translateY(-50px) scale(0.2); /* Added scale to the transform */
+    transition: opacity 5s, transform 5s;
+    border-radius: 10px;
+    background-color: rgba(228, 228, 228, 0.2);
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    margin-top: 0;
+    margin-left: auto;
+    margin-right: auto;
+    height: 80vh;
+}
+
+.content.active {
+    animation: fadeInSlideScale 0.5s forwards; /* renamed the animation for clarity */
+    display: block;
+}
+
+@keyframes fadeInSlideScale {
+    0% {
+        opacity: 0;
+        transform: translateY(-50px) scale(0.2); /* Added scale to the transform */
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0) scale(1); /* Scaling to original size */
+    }
+}
+
+
+
+
 
 
 .profile{
@@ -74,11 +83,11 @@ nav a {
     align-items: center;
     justify-content: center;
     text-align: center;
-    width: 20%;
+    width: 30%;
 }
 .profile-photo {
-    width: 150px;
-    height: 150px;
+    width: 180px;
+    height: 180px;
     border-radius: 50%;
     background: url('assets/profile.jpg') center/cover;
     margin-bottom: 6vh;
@@ -87,6 +96,7 @@ nav a {
     font-size: 3vh;
     font-weight: bold;
     margin-bottom: 2vh;
+    color: white;
 }
 .title {
     font-size: 2vh;
@@ -94,7 +104,7 @@ nav a {
     margin-top: 5px;
 }
 .profile-essay{
-    width: 70%;
+    width: 60%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -104,9 +114,10 @@ nav a {
 }
 .profile-essay p{
     color: black;
-    font-size: 2.5vh;
-    line-height: 6vh;
+    font-size: 2.8vh;
+    line-height: 10vh;
     text-align: center;
+    font-weight: 600;
 }
 
 
@@ -115,49 +126,51 @@ nav a {
 
 
 
-
-
-
-
-
-/* Style for the Resume section */
 #resume {
-    padding: 20px;
-    background-color: white;
+    padding-top: 1vh;
 }
-
 #resume h2{
     text-align: center;
-    margin-bottom: 5vh;
+    margin-bottom: 2vh;
     font-size: 3vh;
     color: white;
     font-weight: 600;
 }
-
-/* Style for the language container row */
-.language-container-row {
-    display: flex; /* Use flexbox to arrange containers in a row */
-    justify-content: center; /* Distribute containers evenly within the row */
+#resume h1 {
+    font-size: 2.7vh;
+    color: black;
+    line-height: 5vh;
+    text-align: center;
+    margin-left: 10vh;
+    margin-right: 10vh;
+    margin-bottom: 10vh;
+    margin-top: 8vh;
 }
 
-/* Style for individual language containers */
+
+
+
+
+
+.language-container-row {
+    display: flex; 
+    justify-content: center; 
+}
 .language-container {
-    padding: 10px;
+    padding: 1vh;
     border-radius: 5px;
-    background-color: #f9f9f9;
+    background-color: #505A65;
     text-align: center;
-    width: 20%;
+    width: 30vh;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     margin-left: 2vh;
     margin-right: 2vh;
 }
-
 .language-container h3 {
-    font-size: 3vh;
-    color: black;
+    font-size: 2.2vh;
+    color: white;
     font-weight: 500;
 }
-
 .pdf-container{
     display: flex;
     flex-direction: column;
@@ -166,79 +179,67 @@ nav a {
     margin-top: 2vh;
     margin-bottom: 2vh;
 }
-
-/* Style for PDF containers */
 .pdf-container img {
-    width: 70px;
+    width: 30px;
     height: auto;
     margin-bottom: 4vh;
 }
-
 .pdf-container a {
     text-decoration: none;
-    color: white;
-    font-weight: 500;
-    font-size: 2vh;
-    background-color: orangered;
-    border-radius: 1vh;
+    color: black;
+    font-weight: lighter;
+    font-size: 1.8vh;
+    background-color: white;
+    border-radius: 2px;
     padding: 1vh 2vh;
 }
-
 .pdf-container a:hover {
     text-decoration: underline;
 }
 
 
 
+
+
+
+
+
+#autobiography{
+    padding-top: 1vh;
+}
 #autobiography h2{
-    width: 70%;
     text-align: center;
-    margin-bottom: 5vh;
+    margin-bottom: 2vh;
     font-size: 3vh;
     color: white;
     font-weight: 600;
 }
-
-/* Style for the section header */
 #autobiography h1 {
-    font-size: 2.7vh; /* Adjust the font size as needed */
-    color: #333; /* Text color */
-    margin-top: 2vh;
-    margin-bottom: 4vh;
-    margin-right: 20vh;
-    margin-left: 20vh;
-    line-height: 4vh;
+    font-size: 2.7vh;
+    color: black;
+    line-height: 5vh;
     text-align: center;
+    margin-left: 10vh;
+    margin-right: 10vh;
+    margin-bottom: 10vh;
+    margin-top: 8vh;
 }
 
-/* Style for the list */
-#autobiography ul {
-    list-style: disc; /* Use disc bullets for the list items */
-    margin-left: 20px; /* Add some left margin to the list */
-    font-size: 18px; /* Adjust the font size as needed */
-    color: #555; /* Text color for list items */
-    list-style-type: none;
-    margin-bottom: 6vh;
-}
 
-/* Style for list items */
-#autobiography li {
-    margin-bottom: 10px; /* Add space between list items */
-    text-align: center;
-}
+
+
+
 
 
 
 #invention{
-    margin-top: 10vh;
+    padding-top: 1vh;
 }
-
 #invention h2{
     width: 100%;
     text-align: center;
-    margin-bottom: 5vh;
     font-size: 3vh;
-    color: orangered;
+    color: white;
     font-weight: 600;
 }
 #invention-container{
@@ -246,156 +247,165 @@ nav a {
     align-items: center;
     justify-content: space-evenly;
     width: 100%;
-    height: 50vh;
     background-color: transparent;
-    margin-top: 10vh;
 }
 .video-container {
     width: 40%;
 }
-
 .video-container video {
     width: 100%;
-    height: 45vh;
+    height: 60vh;
 }
 .video-container p {
     text-align: center;
-    margin-bottom: 2vh;
+    margin-bottom: 1vh;
+    color: black;
+    font-size: 2vh;
 }
-
 .info-container {
     width: 40%;
     padding: 10px;
     background-color: transparent;
-    height: 50vh;
+    height: 60vh;
 }
-
-.info-container h2 {
-    font-size: 3vh;
+.info-container p {
+    font-size: 2.5vh;
+    color: black;
 }
-
 .pdf-container-invention {
     display: flex;
     justify-content: space-between;
     margin-top: 5vh;
 }
-
 .pdf-language-invention {
     text-align: center;
-    background-color: white;
+    background-color: #505A65;
     box-shadow: 0 2px 4px 1px rgba(0, 0, 0, 0.1);
     padding: 2vh 3vh;
+    border-radius: 2px;
 }
 .pdf-language-invention p {
     font-size: 2.2vh;
-    color: orangered;
+    color: white;
     margin-bottom: 3vh;
 }
-
 .pdf-language-invention a {
     text-decoration: none;
-    background-color: orangered;
-    color: #fff;
+    background-color: white;
+    color: black;
     padding: 5px 10px;
-    border-radius: 5px;
+    border-radius: 2px;
     font-size: 2vh;
 }
-
 .pdf-language-invention a:hover {
-    background-color: orangered;
+    background-color: white;
 }
 #invention-container2{
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 5vh;
+    margin-top: 1vh;
 }
 #invention-container2 p{
-    margin-bottom: 5vh;
+    margin-bottom: 3vh;
 }
+
+
+
+
 
 
 
 #african{
-    margin-top: 10vh;
+    padding-top: 1vh;
 }
 #african h2{
     width: 100%;
     text-align: center;
-    margin-bottom: 5vh;
     font-size: 3vh;
-    color: orangered;
+    color: white;
     font-weight: 600;
 }
 
 
+
+
+
+
+
 #modern{
-    margin-top: 10vh;
+    padding-top: 1vh;
 }
 #modern h2{
     width: 100%;
     text-align: center;
-    margin-bottom: 5vh;
     font-size: 3vh;
-    color: orangered;
+    color: white;
     font-weight: 600;
 }
+
+
+
+
+
 
 
 
 .container {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    gap: 3vh;
     width: 100%;
 }
-
 .social-media {
     text-align: center;
-    width: 15% !important;
+    width: 20vh !important;
     padding: 10px;
-    border: 1px solid #ccc;
     border-radius: 5px;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    background-color: white;
+    cursor: pointer;
 }
-
 .social-media h3 {
     font-size: 2vh;
-    margin: 10px 0;
+    margin: 2vh 0;
 }
-
 .social-media img {
-    width: 64px;
-    height: 64px;
+    width: 30px;
+    height: 30px;
     margin: 2vh auto;
 }
-
 .social-media button {
-    background-color: orangered;
-    color: white;
+    background-color: white;
+    color: black;
     border: none;
     padding: 5px 10px;
     border-radius: 5px;
 }
-
 .social-media button:hover {
-    background-color: orangered;
+    background-color: white;
 }
-
-
-
 #social{
-    margin-top: 10vh;
-    margin-bottom: 10vh;
+    padding-top: 1vh;
 }
 #social h2{
     width: 100%;
     text-align: center;
     margin-bottom: 5vh;
     font-size: 3vh;
-    color: orangered;
+    color: white;
     font-weight: 600;
+}
+#social h1{
+    font-size: 2.7vh;
+    color: black;
+    line-height: 5vh;
+    text-align: center;
+    margin-left: 10vh;
+    margin-right: 10vh;
+    margin-bottom: 10vh;
+    margin-top: 8vh;
 }

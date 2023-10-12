@@ -1,291 +1,262 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="index.css">
-    <title>Your Portfolio</title>
+    <title>Simple Website</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
 </head>
+
 <body>
-    
-    <section class="home">
-        <header>
-            <nav>
-                <ul>
-                    <li><a href="#intro">Introduction</a></li>
-                    <li><a href="#resume">Resume</a></li>
-                    <li><a href="#autobiography">Autobiography</a></li>
-                    <li><a href="#invention">Invention/Innovation</a></li>
-                    <li><a href="#african">African Culture</a></li>
-                    <li><a href="#modern">Modern Society</a></li>
-                    <li><a href="#social">Social Media</a></li>
-                </ul>
-            </nav>
-        </header>
-        <div class="content_container">
-            <div id="intro" class="content-container">
-                <div class="profile">
-                    <div class="profile-container">
-                        <div class="profile-photo"></div>
-                        <div class="name">John Doe</div>
-                        <div class="title">Mechatronic Engineering Student</div>
-                    </div>
-                    <div class="profile-essay">
-                        <p>Hello, I am Ruth Mbugua, a dedicated and ambitious student currently in my fourth year at Dedan Kimathi University of Technology. Pursuing a Bachelor of Science in Mechatronics, I have embarked on a journey that seamlessly blends mechanical and electronic engineering, providing me with a unique perspective and a holistic understanding of the field. My academic journey is not merely about acquiring knowledge; it's about pushing boundaries, seeking innovation, and contributing to the advancement of technology.</p>
-                    </div>
+    <header>
+        <nav>
+            <a href="#" onclick="showContent('introduction')">Introduction</a>
+            <a href="#" onclick="showContent('resume')">Resume</a>
+            <a href="#" onclick="showContent('autobiography')">Autobiography</a>
+            <a href="#" onclick="showContent('invention')">Invention/Innovation</a>
+            <a href="#" onclick="showContent('african')">African Culture</a>
+            <a href="#" onclick="showContent('modern')">Modern Society</a>
+            <a href="#" onclick="showContent('social')">Social Media</a>
+        </nav>
+    </header>
+    <main>
+        <div class="content" id="introduction">
+            <div class="profile">
+                <div class="profile-container">
+                    <div class="profile-photo"></div>
+                    <div class="name">Ruth Mbugua</div>
+                    <div class="title">Mechatronic Engineering Student</div>
+                </div>
+                <div class="profile-essay">
+                    <p>Hello, I'm Ruth Mbugua, a fourth-year student at Dedan Kimathi University of Technology pursuing a Bachelor of Science in Mechatronics. My academic journey is all about innovation, pushing boundaries, and advancing technology.</p>
                 </div>
             </div>
-            <div id="resume" class="content-container">
-                <h2>RESUMES</h2>
-                <div class="language-container-row">
-                    <div class="language-container">
-                        <h3>English</h3>
-                        <div class="pdf-container">
-                            <img src="assets/pdf.png" alt="English Resume">
-                            <div>
-                                <a href="kiswahili_resume.pdf" download>View</a>
-                                <a href="kiswahili_resume.pdf" download>Download</a>
-                            </div>
-                        </div>
-                    </div>
-            
-                    <div class="language-container">
-                        <h3>Kiswahili</h3>
-                        <div class="pdf-container">
-                            <img src="assets/pdf.png" alt="Kiswahili Resume">
-                            <div>
-                                <a href="kiswahili_resume.pdf" download>View</a>
-                                <a href="kiswahili_resume.pdf" download>Download</a>
-                            </div>
-                        </div>
-                    </div>
-            
-                    <div class="language-container">
-                        <h3>Kikuyu</h3>
-                        <div class="pdf-container">
-                            <img src="assets/pdf.png" alt="Kikuyu Resume">
-                            <div>
-                                <a href="kiswahili_resume.pdf" download>View</a>
-                                <a href="kiswahili_resume.pdf" download>Download</a>
-                            </div>
+        </div>
+        <div class="content" id="resume">
+            <h2>RESUMES</h2>
+            <h1>Unlocking the Story of My Journey: Delve into the chapters of my life that have shaped my professional path. This section reveals the diverse elements contributing to my comprehensive narrative, offering a glimpse into my experiences and expertise.</h1>
+            <div class="language-container-row">
+                <div class="language-container">
+                    <h3>English</h3>
+                    <div class="pdf-container">
+                        <img src="assets/pdf.png" alt="English Resume">
+                        <div>
+                            <a href="kiswahili_resume.pdf" download>View</a>
+                            <a href="kiswahili_resume.pdf" download>Download</a>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div id="autobiography" class="content-container">
-                <h2>AUTOBIOGRAPHY</h2>
-                <h1>This section delves deeper into my personal journey, offering insights into the chapters of my life. Within this segment, you will find a diverse array of elements, each contributing to a comprehensive narrative. These components include:</h1>
-                <ul>
-                    <li>My Autobiography Essay</li>
-                    <li>PowerPoint  presentation of my autobiography</li>
-                </ul>
-            
-                <div class="language-container-row">
-                    <div class="language-container">
-                        <h3>Autobiography Essay</h3>
-                        <div class="pdf-container">
-                            <img src="assets/pdf.png" alt="English Resume">
-                            <div>
-                                <a href="kiswahili_resume.pdf" download>View</a>
-                                <a href="kiswahili_resume.pdf" download>Download</a>
-                            </div>
-                        </div>
-                    </div>
-            
-                    <div class="language-container">
-                        <h3>PowerPoint Presentation</h3>
-                        <div class="pdf-container">
-                            <img src="assets/pdf.png" alt="Kiswahili Resume">
-                            <div>
-                                <a href="kiswahili_resume.pdf" download>View</a>
-                                <a href="kiswahili_resume.pdf" download>Download</a>
-                            </div>
+        
+                <div class="language-container">
+                    <h3>Kiswahili</h3>
+                    <div class="pdf-container">
+                        <img src="assets/pdf.png" alt="Kiswahili Resume">
+                        <div>
+                            <a href="kiswahili_resume.pdf" download>View</a>
+                            <a href="kiswahili_resume.pdf" download>Download</a>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div id="invention" class="content-container">
-                <h2>INVENTION/INNOVATION</h2>
-                <div id="invention-container">
-                    <div class="video-container">
-                        <p>The Automated Spoon Invention</p>
-                        <video controls>
-                            <!-- Your video source goes here -->
-                        </video>
-                    </div>
-                    <div class="info-container">
-                        <p>This Automated Spoon is designed to revolutionize the way we interact with food, particularly for individuals with mobility challenges or those seeking greater convenience in their culinary experiences.
-                            Below are the abstracts for the videos in three different languages:
-                        </p>
-                        <div class="pdf-container-invention">
-                            <div class="pdf-language-invention">
-                                <p>English</p>
-                                <a href="#">Download PDF</a>
-                            </div>
-                            <div class="pdf-language-invention">
-                                <p>Kiswahili</p>
-                                <a href="#">Download PDF</a>
-                            </div>
-                            <div class="pdf-language-invention">
-                                <p>kikuyu</p>
-                                <a href="#">Download PDF</a>
-                            </div>
+        
+                <div class="language-container">
+                    <h3>Kikuyu</h3>
+                    <div class="pdf-container">
+                        <img src="assets/pdf.png" alt="Kikuyu Resume">
+                        <div>
+                            <a href="kiswahili_resume.pdf" download>View</a>
+                            <a href="kiswahili_resume.pdf" download>Download</a>
                         </div>
-                    </div>
-                </div>
-                <div id="invention-container2">
-                    <p>Below is the PowerPoint presentation that offers an in-depth exploration of the Automated Spoon Invention</p>
-                    <div class="language-container">
-                        <div class="pdf-container">
-                            <img src="assets/pdf.png" alt="English Resume">
-                            <div>
-                                <a href="kiswahili_resume.pdf" download>View</a>
-                                <a href="kiswahili_resume.pdf" download>Download</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div id="african" class="content-container">
-                <h2>AFRICAN CULTURE</h2>
-                <div id="invention-container">
-                    
-                    <div class="info-container">
-                        <p>This Automated Spoon is designed to revolutionize the way we interact with food, particularly for individuals with mobility challenges or those seeking greater convenience in their culinary experiences.
-                            Below are the abstracts for the videos in three different languages:
-                        </p>
-                        <div class="pdf-container-invention">
-                            <div class="pdf-language-invention">
-                                <p>English</p>
-                                <a href="#">Download PDF</a>
-                            </div>
-                            <div class="pdf-language-invention">
-                                <p>Kiswahili</p>
-                                <a href="#">Download PDF</a>
-                            </div>
-                            <div class="pdf-language-invention">
-                                <p>kikuyu</p>
-                                <a href="#">Download PDF</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="video-container">
-                        <p>The Traditional African Foods</p>
-                        <video controls>
-                        </video>
-                    </div>
-                </div>
-                <div id="invention-container2">
-                    <p>Below is the PowerPoint presentation that offers an in-depth exploration of the Automated Spoon Invention</p>
-                    <div class="language-container">
-                        <div class="pdf-container">
-                            <img src="assets/pdf.png" alt="English Resume">
-                            <div>
-                                <a href="kiswahili_resume.pdf" download>View</a>
-                                <a href="kiswahili_resume.pdf" download>Download</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div id="modern" class="content-container">
-                <h2>MODERN SOCIETY</h2>
-                <div id="invention-container">
-                    <div class="video-container">
-                        <p>The Traditional African Foods</p>
-                        <video controls>
-                        </video>
-                    </div>
-                    <div class="info-container">
-                        <p>This Automated Spoon is designed to revolutionize the way we interact with food, particularly for individuals with mobility challenges or those seeking greater convenience in their culinary experiences.
-                            Below are the abstracts for the videos in three different languages:
-                        </p>
-                        <div class="pdf-container-invention">
-                            <div class="pdf-language-invention">
-                                <p>English</p>
-                                <a href="#">Download PDF</a>
-                            </div>
-                            <div class="pdf-language-invention">
-                                <p>Kiswahili</p>
-                                <a href="#">Download PDF</a>
-                            </div>
-                            <div class="pdf-language-invention">
-                                <p>kikuyu</p>
-                                <a href="#">Download PDF</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div id="invention-container2">
-                    <p>Below is the PowerPoint presentation that offers an in-depth exploration of the Automated Spoon Invention</p>
-                    <div class="language-container">
-                        <div class="pdf-container">
-                            <img src="assets/pdf.png" alt="English Resume">
-                            <div>
-                                <a href="kiswahili_resume.pdf" download>View</a>
-                                <a href="kiswahili_resume.pdf" download>Download</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div id="social" class="content-container">
-                <h2>SOCIAL MEDIA PLATFORMS</h2>
-                <div class="container">
-                    <div class="social-media">
-                        <h3>Facebook</h3>
-                        <img src="assets/fb.jpg" alt="Facebook Icon">
-                        <button>View</button>
-                    </div>
-                    <div class="social-media">
-                        <h3>Twitter</h3>
-                        <img src="assets/twitter.png" alt="Twitter Icon">
-                        <button>View</button>
-                    </div>
-                    <div class="social-media">
-                        <h3>Instagram</h3>
-                        <img src="assets/ig.png" alt="Instagram Icon">
-                        <button>View</button>
-                    </div>
-                    <div class="social-media">
-                        <h3>LinkedIn</h3>
-                        <img src="assets/li.png" alt="LinkedIn Icon">
-                        <button>View</button>
-                    </div>
-                    <div class="social-media">
-                        <h3>YouTube</h3>
-                        <img src="assets/yt.png" alt="YouTube Icon">
-                        <button>View</button>
                     </div>
                 </div>
             </div>
         </div>
-    </section>
-    
-
-    <script>
-       // Get all the links in the header
-        const links = document.querySelectorAll('header a');
-
-        // Get all the content containers
-        const contentContainers = document.querySelectorAll('.content-container');
-
-        // Add click event listeners to the links
-        links.forEach((link, index) => {
-            link.addEventListener('click', (event) => {
-                event.preventDefault();
-
-                // Hide all content containers
-                contentContainers.forEach((container) => {
-                    container.style.display = 'none';
-                });
-
-                // Get the corresponding container based on the index
-                contentContainers[index].style.display = 'block';
-            });
-        });
-        document.getElementById('intro').style.display = 'block';
-
-    </script>
+        <div class="content" id="autobiography">
+            <h2>AUTOBIOGRAPHY</h2>
+            <h1>This section delves deeper into my personal journey, offering insights into the chapters of my life. Within this segment, you will find a diverse array of elements, each contributing to a comprehensive narrative. These components include:</h1>
+            <div class="language-container-row">
+                <div class="language-container">
+                    <h3>Autobiography Essay</h3>
+                    <div class="pdf-container">
+                        <img src="assets/pdf.png" alt="English Resume">
+                        <div>
+                            <a href="kiswahili_resume.pdf" download>View</a>
+                            <a href="kiswahili_resume.pdf" download>Download</a>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="language-container">
+                    <h3>PowerPoint Presentation</h3>
+                    <div class="pdf-container">
+                        <img src="assets/pdf.png" alt="Kiswahili Resume">
+                        <div>
+                            <a href="kiswahili_resume.pdf" download>View</a>
+                            <a href="kiswahili_resume.pdf" download>Download</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="content" id="invention">
+            <h2>INVENTION/INNOVATION</h2>
+            <div id="invention-container">
+                <div class="video-container">
+                    <p>The Automated Spoon Invention</p>
+                    <video controls>
+                        <!-- Your video source goes here -->
+                    </video>
+                </div>
+                <div class="info-container">
+                    <p>This Automated Spoon is designed to revolutionize the way we interact with food, particularly for individuals with mobility challenges or those seeking greater convenience in their culinary experiences.
+                        Below are the abstracts for the videos in three different languages:
+                    </p>
+                    <div class="pdf-container-invention">
+                        <div class="pdf-language-invention">
+                            <p>English</p>
+                            <a href="#">Download PDF</a>
+                        </div>
+                        <div class="pdf-language-invention">
+                            <p>Kiswahili</p>
+                            <a href="#">Download PDF</a>
+                        </div>
+                        <div class="pdf-language-invention">
+                            <p>kikuyu</p>
+                            <a href="#">Download PDF</a>
+                        </div>
+                    </div>
+                    <div id="invention-container2">
+                        <p>Below is the PowerPoint presentation that offers an in-depth exploration of the Automated Spoon Invention</p>
+                        <div class="language-container">
+                            <div class="pdf-container">
+                                <img src="assets/pdf.png" alt="English Resume">
+                                <div>
+                                    <a href="kiswahili_resume.pdf" download>View</a>
+                                    <a href="kiswahili_resume.pdf" download>Download</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="content" id="african">
+            <h2>AFRICAN CULTURE</h2>
+            <div id="invention-container">
+                <div class="info-container">
+                    <p>This Automated Spoon is designed to revolutionize the way we interact with food, particularly for individuals with mobility challenges or those seeking greater convenience in their culinary experiences.
+                        Below are the abstracts for the videos in three different languages:
+                    </p>
+                    <div class="pdf-container-invention">
+                        <div class="pdf-language-invention">
+                            <p>English</p>
+                            <a href="#">Download PDF</a>
+                        </div>
+                        <div class="pdf-language-invention">
+                            <p>Kiswahili</p>
+                            <a href="#">Download PDF</a>
+                        </div>
+                        <div class="pdf-language-invention">
+                            <p>kikuyu</p>
+                            <a href="#">Download PDF</a>
+                        </div>
+                    </div>
+                    <div id="invention-container2">
+                        <p>Below is the PowerPoint presentation that offers an in-depth exploration of the Automated Spoon Invention</p>
+                        <div class="language-container">
+                            <div class="pdf-container">
+                                <img src="assets/pdf.png" alt="English Resume">
+                                <div>
+                                    <a href="kiswahili_resume.pdf" download>View</a>
+                                    <a href="kiswahili_resume.pdf" download>Download</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="video-container">
+                    <p>The Traditional African Foods</p>
+                    <video controls>
+                    </video>
+                </div>
+            </div>
+           
+        </div>
+        <div class="content" id="modern">
+            <h2>MODERN SOCIETY</h2>
+            <div id="invention-container">
+                <div class="video-container">
+                    <p>The Traditional African Foods</p>
+                    <video controls>
+                    </video>
+                </div>
+                <div class="info-container">
+                    <p>This Automated Spoon is designed to revolutionize the way we interact with food, particularly for individuals with mobility challenges or those seeking greater convenience in their culinary experiences.
+                        Below are the abstracts for the videos in three different languages:
+                    </p>
+                    <div class="pdf-container-invention">
+                        <div class="pdf-language-invention">
+                            <p>English</p>
+                            <a href="#">Download PDF</a>
+                        </div>
+                        <div class="pdf-language-invention">
+                            <p>Kiswahili</p>
+                            <a href="#">Download PDF</a>
+                        </div>
+                        <div class="pdf-language-invention">
+                            <p>kikuyu</p>
+                            <a href="#">Download PDF</a>
+                        </div>
+                    </div>
+                    <div id="invention-container2">
+                        <p>Below is the PowerPoint presentation that offers an in-depth exploration of the Automated Spoon Invention</p>
+                        <div class="language-container">
+                            <div class="pdf-container">
+                                <img src="assets/pdf.png" alt="English Resume">
+                                <div>
+                                    <a href="kiswahili_resume.pdf" download>View</a>
+                                    <a href="kiswahili_resume.pdf" download>Download</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+        <div class="content" id="social">
+            <h2>SOCIAL MEDIA PLATFORMS</h2>
+            <h1>Whether it’s through sharing my experiences or engaging with others, social media has given me a platform to express myself and connect</h1>
+            <div class="container">
+                <div class="social-media">
+                    <h3>Facebook</h3>
+                    <img src="assets/fb.jpg" alt="Facebook Icon">
+                    <button>View</button>
+                </div>
+                <div class="social-media">
+                    <h3>Twitter</h3>
+                    <img src="assets/twitter.png" alt="Twitter Icon">
+                    <button>View</button>
+                </div>
+                <div class="social-media">
+                    <h3>Instagram</h3>
+                    <img src="assets/ig.png" alt="Instagram Icon">
+                    <button>View</button>
+                </div>
+                <div class="social-media">
+                    <h3>LinkedIn</h3>
+                    <img src="assets/li.png" alt="LinkedIn Icon">
+                    <button>View</button>
+                </div>
+                <div class="social-media">
+                    <h3>YouTube</h3>
+                    <img src="assets/yt.png" alt="YouTube Icon">
+                    <button>View</button>
+                </div>
+            </div>
+        </div>
+    </main>
 </body>
+
 </html>
